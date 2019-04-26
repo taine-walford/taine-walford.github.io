@@ -1,3 +1,36 @@
 body {
-    background-color: #f0f8fc;
-}
+    background-color: #300713;
+    font-family:      Lato, sans-serif;
+  }
+  
+  h1 {
+    font-size:  90px;
+    color:      #00FF80;
+    text-align: center;
+    line-height: 0.9;
+    margin: 0;
+  }
+  
+  p {
+    text-align: center;
+    color: #CC1329;
+  }
+  
+  .header-post {
+    margin: 10px 10px;
+  }
+  
+  .title{
+    margin: px 0px;
+    text-align: center;
+    padding: 15px; 
+  }
+  
+  .icon {
+    width: 64px;
+  }
+  
+  .icondiv {
+    display: inline-block;
+    margin: 0 0;
+  }
