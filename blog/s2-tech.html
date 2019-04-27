@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taine Walford | Dev Blog</title>
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/desktop.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    <div class="index-header">
+      <a href="../index.html">               <div class="button"> HOME  </div> </a>
+      <a href="../blog/blog-index.html"> <div class="button"> BLOG  </div> </a>
+      <a href="../blog/about.html">      <div class="button"> ABOUT </div> </a>
+    </div>
+    
+    <div class="title">
+      <h1>TAINE WALFORD</h1>
+      <hr class="title-hr">
+      <h1>DEV BLOG</h1>
+      <div class="icondiv">
+        <a href="https://github.com/taine-walford">         <img class="icon" src="../images/icons/github-icon.png"> </a>
+        <a href="https://www.facebook.com/taine.walford">   <img class="icon" src="../images/icons/fb-icon.png">     </a>
+        <a href="https://steamcommunity.com/id/hannyaue/">  <img class="icon" src="../images/icons/steam-icon.png">  </a>
+      </div>
+    </div>
+
+    <hr class="horizontal-hr">
+    
+    <div class="post">
+      <div class="post-left">
+        <div class="post-header">
+          <h2> S2-TECH </h2>
+          <h2> 28 April 19 </h2>
+        </div>
+        <h3>What are the best practices associated with Classes vs IDs?</h3>
+        <h3>First, what are Classes? </h3>
+        <p>
+          Classes are defined in HTML and used as a way to select an HTML element in CSS to designate styles to HTML elements. For instance, I could have a .red class that simply turns the text inside the element 'red'. I then apply this to an html element and voila - the text is red. This can be apllied to multiple elements.<br>
+          In short terms, it allows for an amount of CSS to be easily latched to an element/s.
+          <br>
+        </p>
+          <h3>What are IDs? </h3>
+        <p>
+          IDs are defined in HTML, and can be used to designate an ID to an HTML element, however IDs must be unique to work correctly. IDs need to be unique within the page and are good for single elements that need to be selected in JS. This way an element can remain specific and easily 'identified' out of all the elements on the page.<br>
+          In shorter terms, an ID is a license plate for each element, and obviously you'll run into trouble if you get caught with two people with the same license plate.
+          <br><br>
+        </p>
+          <h3>What do I do with all this powerful knowledge?</h3>
+        <p>
+          A very simple way to figure out which one you'll need is to ask yourself: "Is there any other element that will require the same style, now or any time in the future?"<br>
+          <br>
+          If the answer is anything but a firm 'No', use a class.<br>
+          <br>
+          The caveat to this, however, is that elements can have both an ID and a class (or even multiple). This way you can apply reused styles, but the element can have a specific ID tied to it, giving you the best of both worlds. As long you know exactly why you're using ID, you'll be fine. Otherwise, class functions exactly the same and without the mess.
+        </p>
+      </div>
+      <div class="post-image"> 
+        <img src="../images/s2/class-vs-id.png">
+      </div>
+      <div class="clear"></div>
+    </div>
+    
+  </body>
+</html>
