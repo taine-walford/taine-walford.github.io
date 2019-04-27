@@ -66,6 +66,10 @@ body {
     border: 2px solid #00FF80;
     border-radius: 8%;
   }
+
+  .title-divider {
+    width: 560px;
+  }
   
   
   
@@ -73,6 +77,10 @@ body {
     p {
       padding-left:  15px;
       padding-right: 15px;
+    }
+
+    .title-divider {
+      width: 80%;
     }
   }
   
