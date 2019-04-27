@@ -1,7 +1,7 @@
 :root {
-  --teal: #00FF88;
-  --dark: #190013;
+  --teal: #00FF80;
   --medi: #571129;
+  --text: #BFB0B0;
 }
 
 body {
@@ -29,7 +29,7 @@ img {
 
 h2 {
   font-size:     28px;
-  color:         #CC1329;
+  color:         var(--text);
   font-family:   Inconsolata, monopsace;
   display:       inline-block;
   margin: 0;
@@ -44,24 +44,25 @@ h2 {
 
 p {
   font-size:     20px;
+  font-weight:   lighter;
   text-align:    justify;
-  color:         #CC1329;
-  font-family:   Inconsolata, monopsace;
+  color:         var(--text);
+  font-family:   Inconsolata, monospace;
   padding:       0px 15px;
   margin:        0px;
 }
 
 .post-image {
-  width:        calc(50% - 11.5px);
+  width:        calc(50% - 11px);
   margin:       0px auto;
   padding:      0px 5px;
-  border-left:  3px solid var(--teal);
+  border-left:  2px solid var(--teal);
 }
 
 .post {
   width: 95%;
-  border-left:  3px solid var(--teal);
-  border-right: 3px solid var(--teal);
+  border-left:  2px solid var(--teal);
+  border-right: 2px solid var(--teal);
   margin:       100px auto;
   display: flex;
   flex-direction: row;
@@ -79,8 +80,10 @@ p {
 }
 
 .horizontal-hr {
-  margin: 0 auto;
+  margin: 10 auto;
   border-color: var(--teal);
+  border-width: 4px;
+  border-style: solid;
 }
 
 .vertical-hr {
