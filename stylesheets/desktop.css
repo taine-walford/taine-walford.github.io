@@ -4,8 +4,6 @@
   --text: #BFB0B0;
 
   --image-height: 0;
-  min-width: 300px;
-  max-width: 
 
 }
 
@@ -20,7 +18,7 @@ body {
 }
   
 h1 {
-  width:       100vw;
+  font-size:   10vw;
   color:       var(--teal);
   text-align:  center;
   line-height: 0.9;
@@ -48,7 +46,6 @@ a {
 
 img {
   width:   100%;
-  display: block;
 }
 
 h2 {
@@ -66,7 +63,8 @@ p {
   font-weight:   lighter;
   text-align:    justify;
   color:         var(--text);
-  margin:        0px 5px 15px 5px;
+  margin:        0px 2vw 15px 2vw;
+  width:         calc(100% - 8vw);
 }
 
 ul {
@@ -116,7 +114,7 @@ li {
 ================================================================================================================
 */
 
-.title{
+.title {
   padding:    5px 0px;
   text-align: center;
   display:    flex;
@@ -125,30 +123,28 @@ li {
 }
 
 .title-icons {
-  width: 100%;
+  width:            100%;
   text-align:       center;
   display:          flex;
   justify-content:  space-evenly;
 }
     
 .icon-container {
-  width: 25%;
-  max-width: 110px;
-  margin-top: 10px;
-  border-radius:   10%;
+  height: 45px;
+  width:           25%;
+  max-width:       110px;
+  margin-top:      10px;
   display:         flex;  
   justify-content: center;
   background-color: var(--teal);
-  z-index: 5;
 }
 
 .icon {
-  max-width:  45px;
-  max-height: 45px;
-  margin:     0px 5vh;
-  z-index: 6;
+  width:  45px;
+  height: 45px;
   justify-content: center;
-  background-color: #571129;
+  background-color: white;
+  border: 0px solid transparent;
 }
 
 /*
@@ -166,10 +162,10 @@ li {
 
 .post {
   font-family:    'Lato', sans-serif;
-  width:          calc(100% - 14px);
+  width:          calc(100% - 6vw);
   border-left:    2px solid var(--teal);
   border-right:   2px solid var(--teal);
-  margin:         5px;
+  margin:         3vw;
 }
 
 .post-image {
@@ -183,14 +179,16 @@ li {
 ================================================================================================================
 */
 
-.horizontal-sep {
+.sep {
   border-color: var(--teal);
   width:        80%;
+  border-style: solid;
 }
 
 .vertical-hr {
   display: inline-block;
   border:  5px solid red;
+  border-style: solid;
 }
 
 .button {
@@ -206,6 +204,58 @@ li {
   height:           100%;
 }
 
-@media (max-width: 950px) {
-  
+/*
+================================================================================================================
+=================== Media ======================================================================================
+================================================================================================================
+*/
+
+/* mobile port/land */
+@media screen and (min-width:320px) and (max-width:479px){
+  h1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width:480px) {
+  p {
+    font-size: 3.8vw;
+  }
+
+  h1 {
+    width: calc(50% - 10px);
+    text-align: center;
+    font-size: 6vw;
+  }
+
+  .sep {
+    width: 0px;
+    margin: 0px 5px;
+  }
+
+  h2, h3 {
+    font-size: 6vw;
+  }
+
+  body {
+  }
+
+  .title {
+    justify-content: center;
+  }
+}
+
+/* tablet port/land */
+@media screen and (min-width:768px) {
+
+}
+@media screen and (min-width:1024px) {
+
+}
+
+/* desktop port/land */
+@media screen and (min-width:1200px) {
+
+}
+@media screen and (min-width:1600px) {
+
 }
