@@ -1,47 +1,49 @@
 :root {
-  --teal: #00FF80;
-  --medi: #571129;
+  --light: #ee4540;
+  --pink: #c72c41;
+  --medi: #801336;
+  --dark: #510A32;
   --text: #BFB0B0;
-
+  --bg:   #2D142C;
   --image-height: 0;
 
 }
 
 
 body {
-  background-color: #190013;
+  background-color: var(--bg);
   font-family:      'Lato', sans-serif;
   vertical-align:   middle;
-  margin: 0px;
-  padding: 0px;
+  margin:      0px;
+  padding:     0px;
   line-height: 0.95;
 }
   
 h1 {
   font-size:   10vw;
-  color:       var(--teal);
+  color:       var(--light);
   text-align:  center;
   line-height: 0.9;
   margin:      0;
 }
 
 h3 {
-  font-size:   3.5vh;
-  color:       var(--text);
-  margin:      10px 5px;
+  font-size: 3.5vh;
+  color:     var(--text);
+  margin:    10px 2vw;
 }
   
 nav {
   min-height: 45px;
-  background-color: #190013;
+  background-color: var(--bg);
   position: fixed;
-  top: 0;
+  top: 0px;
   z-index: 15;
 }
 
 a {
   text-decoration: none;
-  color:           var(--teal);
+  color:           var(--light);
 }
 
 img {
@@ -49,7 +51,7 @@ img {
 }
 
 h2 {
-  font-size:     4vh;
+  font-size:     3.5vh;
   color:         var(--text);
   font-family:   'Montserrat', sans-serif;
 
@@ -61,19 +63,23 @@ h2 {
 p {
   font-size:     2.5vh;
   font-weight:   lighter;
-  text-align:    justify;
+  text-align:    left;
   color:         var(--text);
   margin:        0px 2vw 15px 2vw;
-  width:         calc(100% - 8vw);
+  width:         calc(100% - 4vw);
 }
 
 ul {
-  list-style-type: square
+  margin: 0px 2vw;
+  padding: 0px 0px 0px 3vw;
+  list-style-type: none;
+  display: inline-block;
 }
 
 li {
   font-size: 25px;
   color:     var(--text);
+  margin:    2vh 0px;
 }
 
 /*
@@ -83,9 +89,9 @@ li {
 */
 
 .index-header {
-  width:   98%;
+  width:   calc(100% - 2vw);
   height:  36px;
-  padding: 3px 1%;
+  padding: 0px 1vw;
   display: flex;
   justify-content: space-evenly;
 }
@@ -99,12 +105,12 @@ li {
   font-size: 25px;
   text-align: center;
 
-  border-top:    1px solid var(--teal);
-  border-bottom: 1px solid var(--teal);
+  border-top:    1px solid var(--light);
+  border-bottom: 1px solid var(--light);
 }
 
-.spacer {
-  height: 51px;
+.spacer-index {
+  height: 45px;
   width: 100%;
 }
 
@@ -115,11 +121,19 @@ li {
 */
 
 .title {
-  padding:    5px 0px;
-  text-align: center;
+  padding: 5px 0px;
+
   display:    flex;
   flex-wrap:  wrap;
-  background-image: linear-gradient(to bottom, #470020, #571129);
+
+  background-color: var(--medi);
+}
+
+.title-element {
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  justify-content: center;
 }
 
 .title-icons {
@@ -136,14 +150,15 @@ li {
   margin-top:      10px;
   display:         flex;  
   justify-content: center;
-  background-color: var(--teal);
+  background-color: var(--medi);
+  box-shadow: 2px 2px 6px -2px var(--bg);
 }
 
 .icon {
   width:  45px;
   height: 45px;
   justify-content: center;
-  background-color: white;
+  background-color: var(--medi);
   border: 0px solid transparent;
 }
 
@@ -154,23 +169,32 @@ li {
 */
 
 .post-header {
-  padding:         0px 5px 10px 5px;
+  padding:         0px 2vw 10px 2vw;
   display:         flex;
   justify-content: space-between;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  position: sticky;
+  top: 45px;
+  z-index: 2;
+  background-color: var(--bg);
 }
 
 .post {
   font-family:    'Lato', sans-serif;
   width:          calc(100% - 6vw);
-  border-left:    2px solid var(--teal);
-  border-right:   2px solid var(--teal);
-  margin:         3vw;
+  border-left:    2px solid var(--light);
+  border-right:   2px solid var(--light);
+  margin:         3vw auto;
 }
 
 .post-image {
-  padding: 0px 5px;
+  padding: 0px 2vw;
   margin:  0px;
+}
+
+.spacer-header {
+  z-index: 1;
+  background-color: var(--bg);
 }
 
 /*
@@ -180,7 +204,7 @@ li {
 */
 
 .sep {
-  border-color: var(--teal);
+  border-color: var(--light);
   width:        80%;
   border-style: solid;
 }
@@ -192,7 +216,10 @@ li {
 }
 
 .button {
-  color: var(--teal);
+  color: var(--text);
+  background-color: var(--medi);
+  border: 2px solid var(--medi);
+  border-radius: 3%;
 }
 
 .clear {
