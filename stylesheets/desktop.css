@@ -169,7 +169,7 @@ li {
 */
 
 .post-header {
-  padding:         0px 2vw 10px 2vw;
+  padding:         10px 2vw 10px 2vw;
   display:         flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -204,15 +204,10 @@ li {
 */
 
 .sep {
-  border-color: var(--light);
-  width:        80%;
-  border-style: solid;
-}
+  margin: 0.3vh 0px; 
+  width:  calc(100vw - 2);
+  border: 1px solid var(--light);
 
-.vertical-hr {
-  display: inline-block;
-  border:  5px solid red;
-  border-style: solid;
 }
 
 .button {
