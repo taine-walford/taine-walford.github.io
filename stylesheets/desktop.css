@@ -24,7 +24,6 @@ h1 {
   color:       var(--light);
   text-align:  center;
   line-height: 0.9;
-  margin:      0;
 }
 
 h3 {
@@ -130,7 +129,6 @@ li {
 }
 
 .title-element {
-  width: 100%;
   margin: 0px;
   text-align: center;
   justify-content: center;
@@ -244,9 +242,11 @@ li {
   }
 
   h1 {
-    width: calc(50% - 10px);
-    text-align: center;
     font-size: 6vw;
+  }
+
+  .title-element {
+    margin: 0px auto;
   }
 
   .sep {
@@ -258,26 +258,32 @@ li {
     font-size: 6vw;
   }
 
-  body {
-  }
-
-  .title {
-    justify-content: center;
-  }
+  /* body {
+    background-color: white;
+  } */
 }
 
 /* tablet port/land */
 @media screen and (min-width:768px) {
+  /* body {
+    background-color: green;
+  } */
 
 }
 @media screen and (min-width:1024px) {
-
+  /* body {
+    background-color: darkgreen;
+  } */
 }
 
 /* desktop port/land */
 @media screen and (min-width:1200px) {
-
+  /* body {
+    background-color: blue;
+  } */
 }
 @media screen and (min-width:1600px) {
-
-}
+  /* body {
+    background-color: darkblue;
+  } */
+} 
