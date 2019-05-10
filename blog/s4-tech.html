@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taine Walford | Dev Blog</title>
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/desktop.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:lighter|Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <nav class="index-header">
+      <a href="../index.html" class="index-button">   HOME  </a>
+      <a href="blog-index.html" class="index-button"> BLOG  </a>
+      <a href="about.html" class="index-button">      ABOUT </a>
+    </nav>
+    <div class="spacer-index"> </div>
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="title-element"> TAINE WALFORD </h1>
+      <h1 class="title-element"> DEV BLOG      </h1>
+
+      <div class="title-icons">
+        <a href="https://github.com/taine-walford" class="icon-container">         <img class="icon" src="../images/icons/github-icon.png"> </a>
+        <a href="https://www.facebook.com/taine.walford" class="icon-container">   <img class="icon" src="../images/icons/fb-icon.png">     </a>
+        <a href="https://steamcommunity.com/id/hannyaue/"  class="icon-container"> <img class="icon" src="../images/icons/steam-icon.png">  </a>
+      </div>
+    </div>
+
+    <hr class="sep">
+    
+
+    <section class="post">
+        <div class="post-header">
+            <h2> Frustration Ahoy </h2> 
+            <h2 style="text-align: right;"> 10-5-19 </h2>
+        </div>
+        <h3>Double Checking</h3>
+        <p>
+          While doing some JS Kata, the 'whereAreYou' problem had me stumped. FOr some reason it wasn't consistent with what I expected, and I couldn't quite find the fault.
+          I immediately started logging some variables to try find what is being passed and returned, and it turned out that it was returning 'Scooby' every time, which was ridiculous as that wasn't correct. 
+          I then tried checking for Velma, and it returned Velma each time. Stumped again, I then looked around at more find() documentation and realized that, while the function is correct, the conditional check 
+          I was using was broken, and I wasn't checking if hiding == Velma, I was setting hiding to Velma. Once I changed that to a check, it worked exactly as I had intended and all was swell.
+          I was super frustrated during this, and I should have used the rubber ducky method to explain it thoroughly and to check my syntax.
+          I learnt that an effective debug method will save me plenty of headaches in the future.
+        </p><br>
+        <p>
+          My favourite method of debuging is to log what I'm exepcting and what it's returning, to see the differences. A good method I have yet to try is the Rubber Duck, which I'm sure will be quite useful. 
+          I'm not a big fan of pseudocode as I tend to have a good grasp of what I'm expected, but error codes and googling are good tools.
+        </p><br>
+      <div class="clear"></div>
+    </section>
+    
+  </body>
+</html>
